@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+    @section('content')
+    	<div class="jumbotron text-center">
+	        <h1>{{$title}}</h1>
 
-        <title>{{config('app.name', 'ToDo_Laravel')}}</title>
-
-    </head>
-    <body>
-        <h1>Welcome to the Todo_Laravel</h1>
-
-        <p>This is the ToDoList Project on Laravel from Lucy TBCZ</p>
-    </body>
-</html>
+	        <p>This is the ToDoList Project on Laravel from Lucy TBCZ</p>
+	        <p><a class="btn btn-primary" href="/login" role="button">Login</a> <a class="btn btn-success" href="/register" role="button">Register</a></p>
+    	</div>
+    @endsection
