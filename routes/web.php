@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('home');
 
-Route::get('/about', 'PagesController@about');
+Route::get('/about', 'PagesController@about')->name('about');
 
-Route::get('/services', 'PagesController@services');
+Route::get('/services', 'PagesController@services')->name('services');
 
 Route::resource('posts', 'PostsController');
